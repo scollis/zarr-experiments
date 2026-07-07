@@ -6,6 +6,7 @@ xarray>=2024.0
 numpy
 pandas
 boto3
+netCDF4
 s3fs
 dask
 matplotlib
