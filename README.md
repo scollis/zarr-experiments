@@ -5,6 +5,25 @@ scans into a single, consolidated, time-appended **Zarr** store, using
 [xradar](https://docs.openradarscience.org/projects/xradar/) with a
 [Py-ART](https://arm-doe.github.io/pyart/) fallback.
 
+## Installation
+
+Reproduce the exact environment the KIWA store was built in:
+
+```bash
+conda env create -f environment.yml   # creates the `radar` env, pinned versions
+conda activate radar
+```
+
+Or install the Python dependencies with pip into an existing env:
+
+```bash
+pip install -r requirements.txt
+```
+
+The `conda` route is recommended — the compiled stack (cartopy, netCDF4) resolves
+more reliably from `conda-forge`. `cmweather` (the ChaseSpectral colormap) is
+pip-only and is pulled in by both routes.
+
 ## Why this is not a one-liner
 
 NEXRAD radars run *adaptive* volume-coverage patterns. Within a single VCP the
