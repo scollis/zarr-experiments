@@ -1,0 +1,17 @@
+# Zarr stores and archives are large and reproducible — never commit them
+*.zarr/
+*.zarr
+*.tar
+*.tar.gz
+scratch/
+downloads/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+env/
+
+# OS
+.DS_Store

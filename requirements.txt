@@ -1,0 +1,12 @@
+# NEXRAD Level II -> Zarr workflow
+xradar>=0.12
+arm_pyart>=1.18
+zarr>=3.2
+xarray>=2024.0
+numpy
+pandas
+boto3
+s3fs
+dask
+matplotlib
+cmweather
