@@ -15,3 +15,6 @@ env/
 
 # OS
 .DS_Store
+
+# git bundles
+*.bundle

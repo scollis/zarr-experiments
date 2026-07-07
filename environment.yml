@@ -1,0 +1,23 @@
+# Conda environment for the NEXRAD Level II -> Zarr workflow.
+# Rebuild with:   conda env create -f environment.yml
+# Versions pinned to the environment this repo's KIWA 2025-11-18 store was built in.
+name: radar
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - xradar=0.12.0
+  - arm_pyart=2.2.4
+  - zarr=3.2.1
+  - xarray=2026.4.0
+  - numpy=2.5.1
+  - pandas=2.2.3
+  - boto3=1.43.40
+  - s3fs
+  - dask=2026.6.0
+  - matplotlib-base=3.11.0
+  - cartopy=0.25.0
+  - netcdf4=1.7.4
+  - pip
+  - pip:
+      - cmweather==0.3.2
